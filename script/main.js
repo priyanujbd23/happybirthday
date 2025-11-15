@@ -263,6 +263,18 @@ const animationTimeline = () => {
         },
         "+=1"
     );
+    // Show poem box
+tl.to(".poem-section", 0.5, { opacity: 1 });
+tl.to(".poem-box", 0.8, { opacity: 1, scale: 1, ease: "back.out(1.7)" });
+
+// Fade in poem lines one by one
+tl.staggerTo(
+    ".poem-line",
+    1,
+    { opacity: 1, y: 0 },
+    0.6
+);
+
 
     // Restart Animation on click
     const replyBtn = document.getElementById("replay");
