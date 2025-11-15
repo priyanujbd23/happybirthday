@@ -263,14 +263,14 @@ const animationTimeline = () => {
         },
         "+=1"
     )
-.to(".container", 1, {
-    opacity: 0,
-    onComplete: () => {
-        const poem = document.querySelector(".poem-page");
-        poem.style.visibility = "visible";
-        poem.style.opacity = "1";
-    }
-});
+        // show poem page after all animations finish
+    .to(".container", 1, {
+        opacity: 0,
+        onComplete: () => {
+            document.querySelector(".poem-page").style.visibility = "visible";
+            document.querySelector(".poem-page").style.opacity = "1";
+        }
+    });
 
 
     // Restart Animation on click
