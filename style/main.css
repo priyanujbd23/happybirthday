@@ -229,7 +229,8 @@ body {
 }
 
 .poem-box {
-  background: #fff7e6;          /* Cream color */
+  background: #fff7e6;
+  font-family: 'Dancing Script', cursive; /* Cream color */
   padding: 40px 50px;
   border-radius: 25px;           /* Curved edges */
   max-width: 600px;
@@ -241,14 +242,18 @@ body {
 }
 
 .poem-heading {
-  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
   margin-bottom: 25px;
   font-weight: 600;
   color: #5a4634;                /* Warm brown tone */
 }
 
 .poem-line {
-  font-size: 1.4rem;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
   margin: 12px 0;
   opacity: 0;
   transform: translateY(20px);
