@@ -262,12 +262,13 @@ const animationTimeline = () => {
             rotation: 90,
         },
         "+=1"
-    );
+    )
 .to(".container", 1, {
     opacity: 0,
     onComplete: () => {
-        document.querySelector(".poem-page").style.opacity = "1";
-        document.querySelector(".poem-page").style.visibility = "visible";
+        const poem = document.querySelector(".poem-page");
+        poem.style.visibility = "visible";
+        poem.style.opacity = "1";
     }
 });
 
